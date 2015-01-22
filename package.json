@@ -1,0 +1,29 @@
+{
+  "name": "rubbish-erb-parser",
+  "version": "1.0.0",
+  "description": "A really rubbish erb parser that only handles a tiny subset of erb.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:callumacrae/rubbish-erb-parser.git"
+  },
+  "author": "Callum Macrae <callum@macr.ae>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/callumacrae/rubbish-erb-parser/issues"
+  },
+  "homepage": "https://github.com/callumacrae/rubbish-erb-parser",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "nunjucks": "^1.1.0",
+    "obj-to-attrs": "^1.1.2",
+    "q": "^1.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "should": "^4.6.1"
+  }
+}
