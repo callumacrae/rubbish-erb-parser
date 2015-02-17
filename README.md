@@ -1,4 +1,4 @@
-# rubbish-erb-parser
+# rubbish-erb-parser [![Build Status](https://travis-ci.org/callumacrae/rubbish-erb-parser.svg)](https://travis-ci.org/callumacrae/rubbish-erb-parser)
 
 This is an erb parser which only supports a tiny subset of erb. We're using it
 in the development of components at Lost My Name, but this library is basically
