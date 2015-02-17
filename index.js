@@ -16,7 +16,13 @@ var contextDefaults = {
 	},
 	image_tag: function (options, path, attrs) {
 		path = options.getImagePath(path);
-		return '<img src="' + path + '" ' + objToAttrs(attrs) + '>';
+
+		attrs = objToAttrs(attrs);
+		if (attrs) {
+			attrs = ' ' + attrs;
+		}
+
+		return '<img src="' + path + '"' + attrs + '>';
 	}
 };
 
@@ -65,7 +71,8 @@ erbParser.renderString = function renderString(str, options, context) {
 		},
 		imagePath: 'imgs/',
 		getImagePath: function getImagePath(path) {
-			return this.imagePath + path;
+			var index = path.indexOf('//');
+			return index != -1 && index < 7 ? path : this.imagePath + path;
 		}
 	}, options);
 

@@ -56,6 +56,13 @@ describe('Rubbish erb parser', function () {
 				});
 		});
 
+		it('shouldnt kill remote images', function () {
+			return erbParser.renderString('<%= image_tag("//imgix.com/image.png") %>')
+				.then(function (str) {
+					str.should.equal('<img src="//imgix.com/image.png">');
+				});
+		});
+
 		it('should let you change the image path', function () {
 			var options = { imagePath: '../images/' };
 			return erbParser.render('test/image_tag.html', options, {})
