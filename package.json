@@ -1,6 +1,6 @@
 {
   "name": "rubbish-erb-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A really rubbish erb parser that only handles a tiny subset of erb.",
   "main": "index.js",
   "scripts": {
